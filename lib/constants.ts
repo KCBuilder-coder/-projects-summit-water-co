@@ -1,16 +1,14 @@
 export const COMPANY = {
   name: "Summit Water Co.",
-  // TODO: replace with the real business phone number.
-  phone: "(000) 000-0000",
-  phoneHref: "tel:+10000000000",
-  email: "hello@summitwaterco.com", // TODO: confirm business email
+  phone: "(830) 730-4406",
+  phoneHref: "tel:+18307304406",
+  email: "info@summitwaterco.com",
 };
 
 export const NAV_LINKS = [
   { label: "Water Softeners", href: "#services" },
   { label: "Reverse Osmosis", href: "#services" },
   { label: "Whole-Home Filtration", href: "#services" },
-  { label: "Financing", href: "#financing" },
   { label: "Contact", href: "#quote" },
 ];
 
@@ -50,8 +48,8 @@ export const SERVICES = [
     title: "Water Softeners",
     description:
       "Reduce hard-water buildup, improve soap performance, and protect plumbing and appliances.",
-    // TODO: replace with a real product photo.
-    imageQuery: "water softener tank utility room",
+    imageSrc: "/images/services/water-softener.jpg",
+    imageAlt: "Summit Water Co. water softener and brine tank installed in a utility space",
   },
   {
     id: "ro",
@@ -59,7 +57,8 @@ export const SERVICES = [
     title: "Reverse Osmosis",
     description:
       "Enjoy clean, great-tasting drinking water directly from a dedicated kitchen faucet.",
-    imageQuery: "reverse osmosis kitchen faucet",
+    imageSrc: "/images/services/reverse-osmosis.jpg",
+    imageAlt: "Summit Water Co. reverse osmosis system with dedicated kitchen faucet",
   },
   {
     id: "filtration",
@@ -67,7 +66,8 @@ export const SERVICES = [
     title: "Whole-Home Filtration",
     description:
       "Target chlorine, sediment, odors, and other common water-quality concerns throughout the home.",
-    imageQuery: "whole home water filtration system",
+    imageSrc: "/images/services/whole-home-filtration.jpg",
+    imageAlt: "Summit Water Co. whole-home filtration system components",
   },
 ];
 
@@ -105,12 +105,7 @@ export const PROCESS_STEPS = [
   },
 ];
 
-export const TRUST_ITEMS = [
-  "Premium Equipment",
-  "Professional Installation",
-  "Honest Pricing",
-  "Financing Available",
-];
+export const TRUST_ITEMS = ["Premium Equipment", "Professional Installation", "Honest Pricing"];
 
 // NOTE FOR DEVELOPER: These are placeholder testimonials for layout purposes
 // only. They are clearly fabricated names/quotes and must be replaced with
