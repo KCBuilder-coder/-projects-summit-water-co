@@ -48,7 +48,7 @@ export const SERVICES = [
     title: "Water Softeners",
     description:
       "Reduce hard-water buildup, improve soap performance, and protect plumbing and appliances.",
-    imageSrc: "/images/services/water-softener.jpg",
+    imageSrc: "/images/services/water-softener.png",
     imageAlt: "Summit Water Co. water softener and brine tank installed in a utility space",
   },
   {
@@ -57,7 +57,7 @@ export const SERVICES = [
     title: "Reverse Osmosis",
     description:
       "Enjoy clean, great-tasting drinking water directly from a dedicated kitchen faucet.",
-    imageSrc: "/images/services/reverse-osmosis.jpg",
+    imageSrc: "/images/services/reverse-osmosis.png",
     imageAlt: "Summit Water Co. reverse osmosis system with dedicated kitchen faucet",
   },
   {
@@ -66,7 +66,7 @@ export const SERVICES = [
     title: "Whole-Home Filtration",
     description:
       "Target chlorine, sediment, odors, and other common water-quality concerns throughout the home.",
-    imageSrc: "/images/services/whole-home-filtration.jpg",
+    imageSrc: "/images/services/whole-home-filtration.png",
     imageAlt: "Summit Water Co. whole-home filtration system components",
   },
 ];
