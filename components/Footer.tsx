@@ -1,4 +1,5 @@
 import { Facebook, Instagram } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { COMPANY, SERVICE_AREAS } from "@/lib/constants";
 
@@ -7,24 +8,36 @@ export function Footer() {
     <footer className="bg-navy-deep text-white/70">
       <Container className="grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="font-display text-xl text-white">
-            Summit <span className="italic">Water Co.</span>
-          </span>
+          <div className="flex items-center gap-2.5">
+            <Image
+              src="/images/icon-mark.png"
+              alt=""
+              width={485}
+              height={351}
+              className="h-7 w-auto"
+            />
+            <span className="font-display text-xl text-white">
+              Summit <span className="italic">Water Co.</span>
+            </span>
+          </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
             Premium water treatment without the franchise price. Serving San Marcos and Central
             Texas homeowners.
           </p>
           <div className="mt-6 flex gap-3">
-            {/* TODO: link to real social profiles before launch. */}
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61592254800035"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/60 hover:border-white/40 hover:text-white"
             >
               <Facebook size={16} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/summitwaterco"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/60 hover:border-white/40 hover:text-white"
             >
@@ -41,7 +54,6 @@ export function Footer() {
             <li><a href="#services" className="hover:text-white">Water Softeners</a></li>
             <li><a href="#services" className="hover:text-white">Reverse Osmosis</a></li>
             <li><a href="#services" className="hover:text-white">Whole-Home Filtration</a></li>
-            <li><a href="#financing" className="hover:text-white">Financing</a></li>
           </ul>
         </div>
 
