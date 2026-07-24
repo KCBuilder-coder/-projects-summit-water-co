@@ -18,22 +18,14 @@ export function QuoteForm() {
     const payload = Object.fromEntries(formData.entries());
 
     try {
-      // -----------------------------------------------------------------
-      // CRM INTEGRATION POINT
-      // Replace this block with a POST request to your GoHighLevel inbound
-      // webhook (or swap this whole form for an embedded GHL form).
-      //
-      // Example:
-      // const response = await fetch("https://YOUR-GHL-WEBHOOK-URL", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(payload),
-      // });
-      // if (!response.ok) throw new Error("Submission failed");
-      // -----------------------------------------------------------------
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-      await new Promise((resolve) => setTimeout(resolve, 600)); // placeholder delay
-      console.log("Quote request payload (placeholder handler):", payload);
+      const result = await response.json();
+      if (!result.ok) throw new Error(result.error || "Submission failed");
 
       setStatus("success");
       e.currentTarget.reset();
@@ -60,7 +52,7 @@ export function QuoteForm() {
               <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-white/40">
                 Call
               </span>
-              <a href={COMPANY.phoneHref} className="mt-1 block text-lg font-semibold text-white">
+              <a href={`tel:${COMPANY.phone}`} className="mt-1 block text-white">
                 {COMPANY.phone}
               </a>
             </div>
@@ -85,6 +77,15 @@ export function QuoteForm() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                style={{ position: "absolute", left: "-9999px" }}
+                aria-hidden="true"
+              />
+
               <Field label="Full Name" name="fullName" required className="sm:col-span-2" />
               <Field label="Phone Number" name="phone" type="tel" required />
               <Field label="Email Address" name="email" type="email" required />
