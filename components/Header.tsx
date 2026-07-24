@@ -59,7 +59,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          
+          <a
             href={COMPANY.phoneHref}
             className="flex items-center gap-2 text-[0.925rem] font-semibold text-navy"
           >
@@ -97,7 +97,7 @@ export function Header() {
             ))}
           </nav>
           <div className="mt-5 flex flex-col gap-3 border-t border-line pt-5">
-            
+            <a
               href={COMPANY.phoneHref}
               className="flex items-center justify-center gap-2 rounded-full border border-line py-3 text-[0.95rem] font-semibold text-navy"
             >
