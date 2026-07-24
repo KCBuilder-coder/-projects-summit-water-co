@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
@@ -31,8 +32,15 @@ export function Header() {
       }`}
     >
       <Container className="flex h-20 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2">
-          {/* TODO: replace with the Summit Water Co. logo file (SVG preferred). */}
+        <a href="#top" className="flex items-center gap-2.5">
+          <Image
+            src="/images/icon-mark.png"
+            alt=""
+            width={485}
+            height={351}
+            priority
+            className="h-8 w-auto"
+          />
           <span className="font-display text-xl tracking-tight text-navy">
             Summit <span className="italic text-accent-deep">Water Co.</span>
           </span>
