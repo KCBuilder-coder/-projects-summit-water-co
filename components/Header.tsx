@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
@@ -31,8 +32,15 @@ export function Header() {
       }`}
     >
       <Container className="flex h-20 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2">
-          {/* TODO: replace with the Summit Water Co. logo file (SVG preferred). */}
+        <a href="#top" className="flex items-center gap-2.5">
+          <Image
+            src="/images/icon-mark.png"
+            alt=""
+            width={485}
+            height={351}
+            priority
+            className="h-8 w-auto"
+          />
           <span className="font-display text-xl tracking-tight text-navy">
             Summit <span className="italic text-accent-deep">Water Co.</span>
           </span>
@@ -40,7 +48,7 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {NAV_LINKS.map((link) => (
-            <a
+            
               key={link.label}
               href={link.href}
               className="text-[0.925rem] font-medium text-navy/80 transition-colors hover:text-navy"
@@ -51,7 +59,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <a
+          
             href={COMPANY.phoneHref}
             className="flex items-center gap-2 text-[0.925rem] font-semibold text-navy"
           >
@@ -78,7 +86,7 @@ export function Header() {
         <div className="border-t border-line bg-white px-6 py-6 lg:hidden">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {NAV_LINKS.map((link) => (
-              <a
+              
                 key={link.label}
                 href={link.href}
                 onClick={() => setOpen(false)}
@@ -89,7 +97,7 @@ export function Header() {
             ))}
           </nav>
           <div className="mt-5 flex flex-col gap-3 border-t border-line pt-5">
-            <a
+            
               href={COMPANY.phoneHref}
               className="flex items-center justify-center gap-2 rounded-full border border-line py-3 text-[0.95rem] font-semibold text-navy"
             >
