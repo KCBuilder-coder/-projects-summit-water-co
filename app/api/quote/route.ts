@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const GHL_WEBHOOK_URL =
-  "https://services.leadconnectorhq.com/hooks/iMsGw83syazqwBs1cQgw/webhook-trigger/dd00fa18-988e-4104-8eeb-e52ede585f9a";
-
+  "https://services.leadconnectorhq.com/hooks/iMsGw83syazqwBs1cQgw/webhook-trigger/b3a53b35-f551-495d-83e1-340fe543dbaa";
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
