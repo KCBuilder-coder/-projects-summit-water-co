@@ -5,9 +5,7 @@ import { Services } from "@/components/Services";
 import { ValueProp } from "@/components/ValueProp";
 import { EquipmentShowcase } from "@/components/EquipmentShowcase";
 import { ProcessSteps } from "@/components/ProcessSteps";
-import { Financing } from "@/components/Financing";
 import { ServiceArea } from "@/components/ServiceArea";
-import { Testimonials } from "@/components/Testimonials";
 import { QuoteForm } from "@/components/QuoteForm";
 import { Footer } from "@/components/Footer";
 
@@ -21,9 +19,10 @@ export default function Home() {
       <ValueProp />
       <EquipmentShowcase />
       <ProcessSteps />
-      <Financing />
       <ServiceArea />
-      <Testimonials />
+      {/* Testimonials section removed until real customer reviews are ready.
+          To bring it back: import { Testimonials } from "@/components/Testimonials";
+          and add <Testimonials /> right here, above the QuoteForm. */}
       <QuoteForm />
       <Footer />
     </main>
