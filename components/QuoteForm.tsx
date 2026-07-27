@@ -14,7 +14,8 @@ export function QuoteForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
 
     try {
@@ -28,7 +29,7 @@ export function QuoteForm() {
       if (!result.ok) throw new Error(result.error || "Submission failed");
 
       setStatus("success");
-      e.currentTarget.reset();
+      form.reset();
     } catch (err) {
       setStatus("error");
     }
