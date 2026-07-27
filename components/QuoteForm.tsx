@@ -41,7 +41,7 @@ export function QuoteForm() {
         <div className="rounded-2xl bg-white p-7 shadow-card sm:p-9">
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/Z0PkQAnYSjuawHKe4Ok8"
-            style={{ width: "100%", height: "636px", border: "none", borderRadius: "3px" }}
+            style={{ width: "100%", height: "637px", border: "none", borderRadius: "3px" }}
             id="inline-Z0PkQAnYSjuawHKe4Ok8"
             data-layout='{"id":"INLINE"}'
             data-trigger-type="alwaysShow"
@@ -51,7 +51,7 @@ export function QuoteForm() {
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="Contact Us Form (on the website)"
-            data-height="636"
+            data-height="637"
             data-layout-iframe-id="inline-Z0PkQAnYSjuawHKe4Ok8"
             data-form-id="Z0PkQAnYSjuawHKe4Ok8"
             title="Contact Us Form (on the website)"
