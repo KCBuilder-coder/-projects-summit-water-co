@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Water Softeners & Filtration in San Marcos & Central Texas | Summit Water Co.",
   description:
-    "Summit Water Co. installs premium water softeners, reverse osmosis, and whole-home filtration systems for San Marcos and Central Texas homeowners. Honest pricing, professional installation, financing available.",
+    "Summit Water Co. installs premium water softeners, reverse osmosis, and whole-home filtration systems for San Marcos and Central Texas ho",
   keywords: [
     "water softeners Central Texas",
     "water softeners San Marcos",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Water Softeners & Filtration in San Marcos & Central Texas | Summit Water Co.",
     description:
-      "Premium water treatment without the franchise price. Serving San Marcos and Central Texas homeowners with professional installation and honest pricing.",
+      "Premium water treatment without the franchise price. Serving San Marcos and Central Texas homeowners with professional installation and",
     url: siteUrl,
     siteName: "Summit Water Co.",
     locale: "en_US",
@@ -72,7 +72,7 @@ const localBusinessJsonLd = {
   description:
     "Premium water softener, reverse osmosis, and whole-home filtration installation serving San Marcos and Central Texas.",
   url: siteUrl,
-  telephone: "+1-000-000-0000", // TODO: replace with real business phone
+  telephone: "+1-830-730-4406",
   priceRange: "$$",
   areaServed: {
     "@type": "Place",
@@ -80,10 +80,10 @@ const localBusinessJsonLd = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "TODO street address",
+    streetAddress: "115 Rosa Rd",
     addressLocality: "San Marcos",
     addressRegion: "TX",
-    postalCode: "TODO",
+    postalCode: "78666",
     addressCountry: "US",
   },
   // TODO: replace with verified geo coordinates
@@ -113,6 +113,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <body className="font-sans">
+        <script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a691b0fecf1f59fc88e5b14"
+          data-source="WEB_USER"
+        ></script>
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
